@@ -4,7 +4,7 @@ set -u -o -x -v -e
 test -f $(which aws)
 test -f $(which gcloud)
 echo no | android create avd -t android-24 -n test -b armeabi-v7a -f
-emulator -avd test -no-window -no-boot-anim &
+emulator -avd test -no-window &
 wait_emulator
 set +e
 ./gradlew assemble test connectedAndroidTest --stacktrace
