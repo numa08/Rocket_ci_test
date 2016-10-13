@@ -3,6 +3,7 @@
 set -u -o -x -v -e
 test -f $(which aws)
 test -f $(which gcloud)
+env
 echo no | android create avd -t android-24 -n test -b armeabi-v7a -f
 emulator -avd test -no-window &
 wait_emulator
