@@ -4,9 +4,6 @@ set -u -o -x -v -e
 test -f $(which aws)
 test -f $(which gcloud)
 env
-echo "<<<<<<<<<<<<<<<<<<"
-echo "test"
-echo ">>>>>>>>>>>>>>>>>>"
 set +e
 ./gradlew assemble test --stacktrace
 code=$?
