@@ -12,5 +12,4 @@ set +e
 code=$?
 set -e
 cp -r ${HOME}/.gradle $ROCKET_CACHE
-exit $code 
 rsync -avzn --exclude=tmp/ --exclude=intermediates/ --exclude='**/*.java' --exclude='**/*.class' ./app/build $ROCKET_ARTIFACTS && exit $code
