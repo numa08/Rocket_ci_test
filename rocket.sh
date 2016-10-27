@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+env
 set -u -x -v -e
 mkdir -p "${HOME}/.gradle"
 if [[ -d $ROCKET_CACHE/.gradle ]];then
