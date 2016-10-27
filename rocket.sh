@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#set -u -x -v -e
+set -u -x -v -e
 mkdir -p "${HOME}/.gradle"
 if [[ -d $ROCKET_CACHE/.gradle ]];then
     cp -r $ROCKET_CACHE/.gradle $HOME
