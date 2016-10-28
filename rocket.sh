@@ -8,7 +8,7 @@ fi
 test -f $(which aws)
 test -f $(which gcloud)
 #set +e
-#./gradlew assemble test --stacktrace
+./gradlew assemble test --stacktrace
 mkdir -p $ROCKET_WORKSPACE/app/.build
 code=$?
 #set -e
